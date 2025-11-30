@@ -53,7 +53,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- Babel for Browser-side JSX -->
+    <!-- Babel for Browser-side JSX/TSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <!-- Import Map -->
@@ -77,7 +77,7 @@
   <body class="bg-gradient-to-br from-bgStart to-bgEnd min-h-screen text-gray-800">
     <div id="root"></div>
     
-    <!-- Main Script with Babel Type -->
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+    <!-- Main Script: Presets added for TypeScript support -->
+    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>
